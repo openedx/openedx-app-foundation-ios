@@ -21,7 +21,7 @@ public extension Dictionary {
     mutating func setSafeObject(_ object: Value?, forKey: Key) {
         setObjectOrNil(object, forKey: forKey)
         if object == nil {
-            assert(false, "Expecting object for key: \(forKey)");
+            assert(false, "Expecting object for key: \(forKey)")
         }
     }
 }
